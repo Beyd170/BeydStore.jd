@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkanoid Game</title>
+    <link rel="stylesheet" href="game3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+             <div class="logo">
+                <a href="shop.html">
+                   <i class='bx bx-game logo-icon'></i>
+                    <span class="logo-my">Beyd</span><span class="logo-store">Game</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                   <li><a href="Game.html" class="active">Game</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+             <div class="cart">
+              <a href="bascket.html"><i class='bx bx-cart-alt'></i></a>
+            </div>
+             <div class="login-btn">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+         <div class="game-container">
+            <canvas id="arkanoidCanvas" width="600" height="400"></canvas>
+              <div class="score">Score: 0</div>
+           <a href="game2.html" class="prev-game-arrow">
+               <i class='bx bx-right-arrow-alt'></i>
+           </a>
+           <a href="game4.html" class="next-game-arrow">
+               <i class='bx bx-right-arrow-alt'></i>
+           </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BeydGame. All rights reserved.</p>
+            <nav>
+                <ul>
+                   <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="game3.js" defer></script>
+</body>
+</html>

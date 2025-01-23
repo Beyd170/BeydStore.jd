@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BascketProduct</title>
+    <link rel="stylesheet" href="bascket_style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="bascket.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="ico.ico" alt="Логотип" class="logo-image">
+                <a href="shop.html"><span class="logo-my">Beyd</span><span class="logo-store">Store</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Game.html">Game</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+              <a href="bascket.html"><i class='bx bx-cart-alt'></i></a>
+            </div>
+             <div class="login-btn">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <div class="container">
+                 <h2>List product</h2>
+                <div class="products-grid">
+                     <div class="product" data-product-id="1">
+                        <img src="pictures1.jpg" alt="Product 1"  class="product-image" >
+                         <h3>Shit</h3>
+                         <p class="product-price">1000 $</p>
+                        <button class="add-to-cart-btn">Add in basket</button>
+                     </div>
+                      <div class="product" data-product-id="2">
+                          <img src="pictures2.jpg" alt="Product 2" class="product-image">
+                        <h3>Egg</h3>
+                        <p class="product-price">1500 $</p>
+                        <button class="add-to-cart-btn">Add in basket</button>
+                    </div>
+                    <div class="product" data-product-id="3">
+                         <img src="pictures3.jpg" alt="Product 3" class="product-image">
+                        <h3>Tatar</h3>
+                        <p class="product-price">2000 $</p>
+                        <button class="add-to-cart-btn">Add in basket</button>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart-section">
+            <div class="container">
+                <h2>Bascket</h2>
+                <div id="cart-items">
+                    <!-- Здесь будут отображаться товары корзины -->
+                    <p id="empty-cart-message">Basket empty</p>
+                </div>
+                <button id="clear-cart-btn">Delete a bascket</button>
+                <p id="total-price">Total sum: 0 $</p>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+        <div class="container">
+            <p>&copy; 2024 BeydStore. Все права защищены.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+   <script src="script.js" defer></script>
+</body>
+</html>
